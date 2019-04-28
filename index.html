@@ -12,10 +12,15 @@
     <div id="app"></div>
     <script type="text/babel">
         class App extends React.Component{
+            state = {
+                name: 'Ryu',
+                age: 28
+            }
             render(){
                 return (
                     <div className="app-content">
                         <h1>Hey Ninjas</h1>
+                        <p>My name is : { this.state.name } I am { this.state.age } years old</p>
                     </div>
                 )
             }
